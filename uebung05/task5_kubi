@@ -1,0 +1,21 @@
+while True:
+  try:
+    n = int(input("Bitte eine Dezimalahl eingeben:\n"))
+    break
+  except ValueError:
+    print('Invalid Input!')
+
+i = 0
+bnum = []
+while n!=0:
+    rem = n%2
+    bnum.insert(i, rem)
+    i = i+1
+    n = int(n/2)
+
+i = i-1
+print("\nDer dazugehörige Binärwert ist:")
+while i>=0:
+    print(end=str(bnum[i]))
+    i = i-1
+print()
