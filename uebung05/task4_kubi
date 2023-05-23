@@ -1,0 +1,17 @@
+#Schreibt ein Skript, das mit Hilfe von for-Schleifen
+# das folgende Muster erzeugt.
+# Die maximale Anzahl von Sternen in einer Zeile
+# soll am Anfang durch input() übergeben werden.
+
+while True:
+  try:
+    n = int(input("Bitte eine Zahl eingeben:\n"))
+    break
+  except ValueError:
+    print('Nur Ganzzahlen eingeben!')
+
+for i in range(1,n+1):
+    star = '*'*i
+    print(star)
+for i in range(n+1,-1,-1):
+    print( "*"*i)
