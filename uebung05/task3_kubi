@@ -1,0 +1,16 @@
+y = input("Bitte einen Satz eingeben: \n")
+
+x = ""
+for character in y:
+    if  character == " ":
+        x = x + character
+    else:
+        if(character.isalnum()):
+            x = x + character
+print(x)
+
+words = x.split()
+wordcount = len(words)
+average = sum(len(word) for word in words) / len(words)
+result = (wordcount, "%.2f" % (average))
+print(result)
