@@ -1,0 +1,6 @@
+# Unter Verwendung eines for-loops, schreibt ein Programm,
+# das euch alle gerade Zahlen zwischen 0
+# und 10 ausgibt, die 0 eingeschlossen.
+
+for i in range(0,11,2):
+    print(i)
