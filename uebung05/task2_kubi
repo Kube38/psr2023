@@ -1,0 +1,18 @@
+x = input()
+y = input()
+
+if len(y) > 1:
+    print("one character please")
+
+split_value = []
+tmp = ''
+for c in x:
+    tmp += c
+    if c == y:
+        split_value.append(tmp)
+        tmp = ''
+
+if tmp:
+    split_value.append(tmp)
+
+print(split_value)
